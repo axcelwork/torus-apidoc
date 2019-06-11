@@ -47,7 +47,6 @@ html {
 html,
 body,
 div,
-span,
 h1,
 h2,
 h3,
@@ -96,6 +95,20 @@ section {
   line-break: strict;
   letter-spacing: 0.1rem;
 	color: #333;
+	page-break-inside: avoid;
+}
+
+span {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-style: normal;
+  background: transparent;
+  box-sizing: border-box;
+  line-break: strict;
+  letter-spacing: 0.1rem;
 	page-break-inside: avoid;
 }
 body {
@@ -421,7 +434,8 @@ button {
 
 		pre {
 			padding: 20px;
-			background-color: #434F58;
+			/* background-color: #434F58; */
+			background-color: #232323;
 			border-radius: 8px;
 			margin-bottom: 20px;
 
@@ -643,7 +657,7 @@ button {
 
 		.source {
 			pre {
-				background-color: #eee !important;
+				/* background-color: #eee !important; */
 				color: #333 !important;
 			}
 		}
