@@ -416,12 +416,16 @@ button {
 		/* margin-bottom: 40px; */
 
 		& > p {
-			border-radius: 8px 8px 0 0;
+			/* border-radius: 8px 8px 0 0; */
 			background-color: #313B45;
 			padding: 15px 20px;
 
 			& + pre {
-				border-radius: 0 0 8px 8px;
+				/* border-radius: 0 0 8px 8px; */
+			}
+
+			&:first-child {
+				border-radius: 8px 8px 0 0;
 			}
 		}
 		strong {
@@ -434,11 +438,16 @@ button {
 			padding: 20px;
 			/* background-color: #434F58; */
 			background-color: #232323;
-			border-radius: 8px;
-			margin-bottom: 20px;
+			/* border-radius: 8px; */
+			/* margin-bottom: 20px; */
 
 			color: #C5D7E0;
 			font-size: 13px;
+
+			&:last-child {
+				border-radius: 0 0 8px 8px;
+				margin-bottom: 20px;
+			}
 		}
 
 		code {
