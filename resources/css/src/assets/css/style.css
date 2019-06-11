@@ -265,8 +265,6 @@ button {
 			}
 
 			&.type {
-				
-				
 				a {
 					display: grid;
 					grid-template-columns: 1fr 58px;
