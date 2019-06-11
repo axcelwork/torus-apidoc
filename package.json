@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "develop",
   "main": "index.js",
-  "copy": "Copyright © Example Inc.",
+  "copy": "Copyright &copy; Example Inc.",
   "scripts": {
     "start:project": "run-p watch:js server watch:css watch:md",
     "server": "browser-sync start -s --ss='./dist/' --files='./dist/**/*.html,./dist/**/*.css,./dist/**/*.js'",
