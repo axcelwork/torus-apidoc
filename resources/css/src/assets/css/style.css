@@ -184,10 +184,10 @@ button {
 		grid-template-columns: 230px 1fr;
   	grid-template-rows: 1fr;
 	}
+}
 
-	#copy {
-		display: none;
-	}
+#copy {
+	display: none;
 }
 
 #print_name {
@@ -535,14 +535,6 @@ button {
 	#wrapper.is_grid {
 		display: block;
 		position: relative;
-
-		#copy {
-			display: block;
-			width: 100%;
-			position: absolute;
-			bottom: 20px;
-			left: 50px;
-		}
 	}
 	#nav {
 		display: none;
@@ -552,6 +544,14 @@ button {
 		&:before {
 			width: calc(50% - 10px);
 		}
+	}
+
+	#copy {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding-left: 50px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -564,20 +564,13 @@ button {
 
 	#wrapper.is_grid {
 		display: block;
-
-		#copy {
-			display: block;
-			width: 100%;
-			text-align: center;
-		}
-		
 	}
 	#nav {
 		display: none;
 	}
 
 	#contents {
-		padding: 30px;
+		padding: 5%;
 
 		&:before {
 			display: none;
@@ -613,6 +606,13 @@ button {
 	}
 	table {
 		min-width: 500px !important;
+	}
+
+	#copy {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 50px;
 	}
 }
 
