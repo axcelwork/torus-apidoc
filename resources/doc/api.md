@@ -185,3 +185,41 @@ https://stg.example.com/employee/{id}
 |id|String|パラメーターの備考|
 |employee_name|String|パラメーターの備考|
 |employee_age|String|パラメーターの備考|
+
+
+## /codespan/{custom}(GET,application/json)
+
+ソースコードのカスタム記法です。
+
+```js:PRODUCTION
+https://example.com/codespan/{custom}
+```
+
+```js:STAGING
+https://stg.example.com/codespan/{custom}
+```
+
+### リクエスト
+
+|パラメータ名|説明|
+|--|--|
+|id _string_|パラメーターの備考|
+
+
+### レスポンス
+
+```json:成功
+[
+  {
+    "id": String,
+    "employee_name": String,
+    "employee_age": String
+  }
+]
+```
+
+|パラメータ名|説明|
+|--|--|
+|id _string_|パラメーターの備考|
+|employee_name _string_|パラメーターの備考|
+|employee_age _string_|パラメーターの備考|

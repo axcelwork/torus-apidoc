@@ -51,21 +51,35 @@ HTMLでは`<h2>`に変換され、API名と左メニューに使用されます�
 ソースの表示はコード記法を`<source>`で括ってください。<br>
 `**TEXT**`の強調記法は見出し要素となります。
 
-```
+````
 <source>
 
 **PRODUCTION**
-\```
+```
 https://example.com/add
-\```
+```
 
 **STAGING**
-\```
+```
 https://stg.example.com/add
-\```
+```
 
 </source>
+````
+
+### サンプル等ソースのカスタム記法
+ソースコードのカスタム記法です。
+下記のようにコードフォーマットのあとにコロン（`:`）で見出し名を設定します。
+
+````
+```js:PRODUCTION
+https://example.com/add
 ```
+
+```js:STAGING
+https://stg.example.com/add
+```
+````
 
 ### パラメータ部分の特殊記法
 パラメータ表の部分にのみ、特殊な記法を追加しました。<br>

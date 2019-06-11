@@ -488,7 +488,7 @@ button {
 
 				&:first-child {
 						font-weight: bold;
-						width: 120px;
+						width: 30%;
 					}
 			}
 		}
@@ -511,7 +511,7 @@ button {
 
 					&:first-child {
 						font-weight: bold;
-						width: 120px;
+						width: 30%;
 
 						em {
 							display: block;

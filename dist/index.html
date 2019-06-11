@@ -20,6 +20,7 @@
                 <li id="list_add" class="type post"><a href="#add">/add</a></li>
 <li id="list_employee" class="type get"><a href="#employee">/employee</a></li>
 <li id="list_employeeid" class="type get"><a href="#employeeid">/employee/{id}</a></li>
+<li id="list_codespancustom" class="type get"><a href="#codespancustom">/codespan/{custom}</a></li>
 
             </ul>
 
@@ -34,8 +35,8 @@
 <div class="source">
 
 <p><strong>PRODUCTION</strong></p>
-<pre><code>https://example.com/add</code></pre><p><strong>STAGING</strong></p>
-<pre><code>https://stg.example.com/add</code></pre></div>
+<pre><code class="hljs ">https://example.com/add</code></pre><p><strong>STAGING</strong></p>
+<pre><code class="hljs ">https://stg.example.com/add</code></pre></div>
 
 <h3 id="リクエスト">リクエスト</h3>
 <p>リクエストパラメータを記載します。</p>
@@ -44,13 +45,12 @@
 <div class="source">
 
 <p><strong>RESPONCE</strong></p>
-<pre><code class="language-json">[
+<pre><code class="hljs json">[
   {
-    &quot;status&quot;: Boolean,
-    &quot;message&quot;: String
+    "status": Boolean,
+    "message": String
   }
-]</code></pre>
-</div>
+]</code></pre></div>
 
 <div class="table_block"><table><thead><tr><th>パラメータ名</th><th>型</th><th>説明</th></tr></thead><tbody><tr><td>status</td><td>Boolean</td><td>パラメーターの備考</td></tr><tr><td>message</td><td>Srray</td><td>パラメーターの備考</td></tr><tr class="child"><td>id</td><td>Integer</td><td>ID</td></tr><tr class="child"><td>addreses</td><td>String</td><td>アドレス</td></tr><tr class="child"><td>domain</td><td>String</td><td>ドメイン</td></tr></tbody></table></div><div class="index" id="employee">
 <h2 id="employee">/employee</h2>
@@ -60,33 +60,31 @@
 <div class="source">
 
 <p><strong>PRODUCTION</strong></p>
-<pre><code>https://example.com/employee</code></pre><p><strong>STAGING</strong></p>
-<pre><code>https://stg.example.com/employee</code></pre></div>
+<pre><code class="hljs ">https://example.com/employee</code></pre><p><strong>STAGING</strong></p>
+<pre><code class="hljs ">https://stg.example.com/employee</code></pre></div>
 
 <h3 id="レスポンス">レスポンス</h3>
 <div class="source">
 
 <p><strong>成功</strong></p>
-<pre><code class="language-json">[
+<pre><code class="hljs json">[
   {
-    &quot;id&quot;: String,
-    &quot;employee_name&quot;: String,
-    &quot;employee_age&quot;: String
+    "id": String,
+    "employee_name": String,
+    "employee_age": String
   },
   {
-    &quot;id&quot;: &quot;2&quot;,
-    &quot;employee_name&quot;: String,
-    &quot;employee_age&quot;: String
+    "id": "2",
+    "employee_name": String,
+    "employee_age": String
   }
   ...
-]</code></pre>
-<p><strong>失敗</strong></p>
-<pre><code class="language-json">[
+]</code></pre><p><strong>失敗</strong></p>
+<pre><code class="hljs json">[
   {
-    &quot;message&quot;: String
+    "message": String
   }
-]</code></pre>
-</div>
+]</code></pre></div>
 
 <div class="table_block"><table><thead><tr><th>パラメータ名</th><th>型</th><th>説明</th></tr></thead><tbody><tr><td>id</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_name</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_age</td><td>String</td><td>パラメーターの備考</td></tr></tbody></table></div><div class="index" id="employeeid">
 <h2 id="employeeid">/employee/{id}</h2>
@@ -96,31 +94,42 @@
 <div class="source">
 
 <p><strong>PRODUCTION</strong></p>
-<pre><code>https://example.com/employee/{id}</code></pre><p><strong>STAGING</strong></p>
-<pre><code>https://stg.example.com/employee/{id}</code></pre></div>
+<pre><code class="hljs ">https://example.com/employee/{id}</code></pre><p><strong>STAGING</strong></p>
+<pre><code class="hljs ">https://stg.example.com/employee/{id}</code></pre></div>
 
 <h3 id="リクエスト">リクエスト</h3>
 <div class="table_block"><table><thead><tr><th>パラメータ名</th><th>必須</th><th>型</th><th>説明</th></tr></thead><tbody><tr><td>id</td><td></td><td>String</td><td>パラメーターの備考</td></tr></tbody></table></div><h3 id="レスポンス">レスポンス</h3>
 <div class="source">
 
 <p><strong>成功</strong></p>
-<pre><code class="language-json">[
+<pre><code class="hljs json">[
   {
-    &quot;id&quot;: String,
-    &quot;employee_name&quot;: String,
-    &quot;employee_age&quot;: String
+    "id": String,
+    "employee_name": String,
+    "employee_age": String
   }
-]</code></pre>
-<p><strong>失敗</strong></p>
-<pre><code class="language-json">[
+]</code></pre><p><strong>失敗</strong></p>
+<pre><code class="hljs json">[
   {
-    &quot;message&quot;: String
+    "message": String
   }
-]</code></pre>
-</div>
+]</code></pre></div>
 
 
-<div class="table_block"><table><thead><tr><th>パラメータ名</th><th>型</th><th>説明</th></tr></thead><tbody><tr><td>id</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_name</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_age</td><td>String</td><td>パラメーターの備考</td></tr></tbody></table></div>
+<div class="table_block"><table><thead><tr><th>パラメータ名</th><th>型</th><th>説明</th></tr></thead><tbody><tr><td>id</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_name</td><td>String</td><td>パラメーターの備考</td></tr><tr><td>employee_age</td><td>String</td><td>パラメーターの備考</td></tr></tbody></table></div><div class="index" id="codespancustom">
+<h2 id="codespancustom">/codespan/{custom}</h2>
+<ul><li class="get">GET</li>
+<li class="application/json">application/json</li>
+</ul></div><p>ソースコードのカスタム記法です。</p>
+<div class="source"><p><strong>PRODUCTION</strong></p><pre><code class="hljs js">https://example.com/codespan/{custom}</code></pre></div><div class="source"><p><strong>STAGING</strong></p><pre><code class="hljs js">https://stg.example.com/codespan/{custom}</code></pre></div><h3 id="リクエスト">リクエスト</h3>
+<div class="table_block"><table><thead><tr><th>パラメータ名</th><th>説明</th></tr></thead><tbody><tr><td>id <em>string</em></td><td>パラメーターの備考</td></tr></tbody></table></div><h3 id="レスポンス">レスポンス</h3>
+<div class="source"><p><strong>成功</strong></p><pre><code class="hljs json">[
+  {
+    "id": String,
+    "employee_name": String,
+    "employee_age": String
+  }
+]</code></pre></div><div class="table_block"><table><thead><tr><th>パラメータ名</th><th>説明</th></tr></thead><tbody><tr><td>id <em>string</em></td><td>パラメーターの備考</td></tr><tr><td>employee_name <em>string</em></td><td>パラメーターの備考</td></tr><tr><td>employee_age <em>string</em></td><td>パラメーターの備考</td></tr></tbody></table></div>
         </div>
 
     </div>
