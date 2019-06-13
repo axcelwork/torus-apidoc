@@ -603,6 +603,8 @@ button {
 
 			h2 {
 				margin-bottom: 20px;
+				width: 100%;
+				margin-right: 0;
 			}
 		}
 
@@ -680,6 +682,7 @@ button {
 				height: 2px;
 			}
 		}
+
 
 		.source {
 			pre {
