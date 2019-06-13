@@ -408,25 +408,25 @@ button {
 		margin-right: calc(50% + 50px);
 		margin-top: 20px;
 	}
-
+	
 	.source {
 		float: right;
 		width: calc(50% - 30px);
 		clear: both;
-		/* margin-bottom: 40px; */
+		border-radius: 8px;
+		overflow: hidden;
+		
+		&.border {
+			border-radius: 8px 8px 0 0;
+		}
+
+		& + .source {
+			border-radius: 0 0 8px 8px;
+		}
 
 		& > p {
-			/* border-radius: 8px 8px 0 0; */
 			background-color: #313B45;
 			padding: 15px 20px;
-
-			& + pre {
-				/* border-radius: 0 0 8px 8px; */
-			}
-
-			&:first-child {
-				border-radius: 8px 8px 0 0;
-			}
 		}
 		strong {
 			font-size: 14px;
@@ -436,18 +436,9 @@ button {
 
 		pre {
 			padding: 20px;
-			/* background-color: #434F58; */
 			background-color: #232323;
-			/* border-radius: 8px; */
-			/* margin-bottom: 20px; */
-
 			color: #C5D7E0;
 			font-size: 13px;
-
-			&:last-child {
-				border-radius: 0 0 8px 8px;
-				margin-bottom: 20px;
-			}
 		}
 
 		code {
@@ -461,7 +452,7 @@ button {
 		font-size: 16px;
 		font-weight: bold;
 		color: #313B45;
-		margin-top: 40px;
+		margin-top: 60px;
 		margin-right: calc(50% + 50px);
 		clear: both;
 	}

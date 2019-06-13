@@ -28,12 +28,6 @@ https://stg.example.com/add
 |tel||String|電話番号|
 |mail||String|メールアドレス|
 
-|パラメータ名|説明|
-|--|--|
-|name _string_ _*_|氏名|
-|tel _string_ _*_|電話番号|
-|mail _string_ _*_|メールアドレス|
-
 ### レスポンス
 
 レスポンスパラメータを記載します。
