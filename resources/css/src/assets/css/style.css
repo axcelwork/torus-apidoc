@@ -406,6 +406,7 @@ button {
 
 	& > p {
 		font-size: 14px;
+		line-height: 1.5;
 		color: #404B53;
 
 		margin-right: calc(50% + 50px);
@@ -604,6 +605,10 @@ button {
 			float: none;
 			width: 100%;
 			margin-top: 20px;
+
+			&.border + .source {
+				margin-top: 0;
+			}
 		}
 
 		h3,

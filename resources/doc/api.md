@@ -2,8 +2,6 @@
 
 ## /add(POST,application/json)
 
-追加を行います。
-
 <source>
 
 **PRODUCTION**
@@ -17,6 +15,8 @@ https://stg.example.com/add
 ```
 
 </source>
+
+追加を行います。
 
 ### リクエスト
 
@@ -60,9 +60,6 @@ https://stg.example.com/add
 
 ## /employee(GET,application/json)
 
-employeeデータを取得します。
-
-
 <source>
 
 **PRODUCTION**
@@ -76,6 +73,8 @@ https://stg.example.com/employee
 ```
 
 </source>
+
+employeeデータを取得します。
 
 ### レスポンス
 
@@ -121,8 +120,6 @@ https://stg.example.com/employee
 
 ## /employee/{id}(GET,application/json)
 
-employeeデータを取得します。
-
 <source>
 
 **PRODUCTION**
@@ -136,6 +133,8 @@ https://stg.example.com/employee/{id}
 ```
 
 </source>
+
+employeeデータを取得します。
 
 ### リクエスト
 
@@ -183,8 +182,6 @@ https://stg.example.com/employee/{id}
 
 ## /codespan/{custom}(GET,application/json)
 
-ソースコードのカスタム記法です。
-
 ```js:PRODUCTION
 https://example.com/codespan/{custom}
 ```
@@ -192,6 +189,8 @@ https://example.com/codespan/{custom}
 ```js:STAGING
 https://stg.example.com/codespan/{custom}
 ```
+
+ソースコードのカスタム記法です。
 
 ### リクエスト
 
