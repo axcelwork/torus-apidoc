@@ -461,6 +461,15 @@ button {
 		clear: both;
 	}
 
+	h4 {
+		font-size: 14px;
+		font-weight: bold;
+		color: #313B45;
+		padding-top: 30px;
+		margin-right: calc(50% + 50px);
+		clear: both;
+	}
+
 	.table_block {
 		margin-top: 30px;
 		margin-right: calc(50% + 50px);
