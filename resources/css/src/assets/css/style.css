@@ -214,6 +214,9 @@ button {
 	}
 
 	ul {
+		overflow-y: auto;
+    height: calc(100vh - 100px);
+
 		li {
 			background-color: #fff;
 			transition: all .45s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -267,7 +270,7 @@ button {
 			&.type {
 				a {
 					display: grid;
-					grid-template-columns: 1fr 58px;
+					grid-template-columns: 1fr 64px;
   				grid-template-rows: 1fr;
 					align-items: center;
 					justify-content: space-between;
@@ -289,17 +292,23 @@ button {
 				}
 
 				&.get {
-						a:after {
-							content: 'GET';
-							background-color: #3BBF87;
-						}
+					a:after {
+						content: 'GET';
+						background-color: #3BBF87;
 					}
-					&.post {
-						a:after {
-							content: 'POST';
-							background-color: #3B5CBF;
-						}
+				}
+				&.post {
+					a:after {
+						content: 'POST';
+						background-color: #3B5CBF;
 					}
+				}
+				&.delete {
+					a:after {
+						content: 'DELETE';
+						background-color: #E35959;
+					}
+				}
 			}
 		}
 	}
@@ -387,6 +396,9 @@ button {
 				&.get {
 					background-color: #3BBF87;
 				}
+				&.delete {
+					background-color: #E35959;
+				}
 
 				&:last-child {
 					margin-right: 0;
@@ -460,7 +472,7 @@ button {
 		margin-right: calc(50% + 50px);
 		clear: both;
 	}
-
+	
 	h4 {
 		font-size: 14px;
 		font-weight: bold;
@@ -603,8 +615,6 @@ button {
 
 			h2 {
 				margin-bottom: 20px;
-				width: 100%;
-				margin-right: 0;
 			}
 		}
 
@@ -682,7 +692,6 @@ button {
 				height: 2px;
 			}
 		}
-
 
 		.source {
 			pre {
