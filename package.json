@@ -1,7 +1,7 @@
 {
-  "name": "torus",
+  "name": "torus-apidoc",
   "version": "1.0.0",
-  "description": "develop",
+  "description": "Create API document with Markdown format document",
   "main": "index.js",
   "copy": "Copyright &copy; Example Inc.",
   "scripts": {
@@ -18,9 +18,8 @@
     "watch:html": "watch \"npm run build:html\" ./resources/html/tmp",
     "runS": "run-s build:md build:html build:pdf"
   },
-  "author": "",
-  "license": "ISC",
-  "private": true,
+  "author": "axcelwork",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.5",
     "browser-sync": "^2.26.5",

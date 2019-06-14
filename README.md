@@ -1,55 +1,112 @@
-# Torus
-Markdown形式でAPIドキュメントを作成できます。
+Torus-apidoc
+====
 
-レスポンシブデザインに対応し、どのデバイスでもキレイに見ることが出来ます。
+[![GitHub release](http://img.shields.io/github/release/tcnksm/gcli.svg?style=flat-square)][release]
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
 
-## DEMO
+[release]: https://github.com/axcelwork/torus/releases
+[license]: https://github.com/axcelwork/torus/blob/master/LICENSE
+
+Overview
+Create API document with Markdown format document
+
+
+## Description
+Convert markeddown documents into HTML and PDF files using [marked](https://www.npmjs.com/package/marked).<br>
+Export Markdown automatically by saving.
+
+
+In response to responsive design, any device can be seen beautifully.
+
+
+## Demo
 [demo](https://axcelwork.github.io/torus/dist/index.html)
 
-## 使い方
-### 1. クローンする
+## Requirement
+This tool uses the following npm module.<br>
+As it is described in package.json, it will be installed together.
 
-クローンしたあとは、`npm install` を行ってください
 
-### 2. コンパイルと出力
+### Server related
+- browser-sync
 
-下記コマンドを実行すればサーバが立ち上がり、コンパイル環境が整います。
+### HTML compilation
+- ejs
+- ejs-cli
+
+### CSS compilation
+- autoprefixer
+- browserslist
+- cssnano
+- postcss-cli
+- postcss-cssnext
+- postcss-import
+- postcss-mixins
+- precss
+
+### JS compilation
+- glob
+- webpack
+- webpack-cli
+
+### Markdown to HTML
+- jsdom
+- marked
+- phantomjs
+
+### HTML to PDF
+- html-pdf
+- html2pdf-cli
+
+### Other
+- npm-check-updates
+- npm-run-all
+- watch
+
+## Install
+
+### 1. Clone
+After cloning, do `npm install`.
+
+### 2. Compile and export
+If you execute the following command, the server will start up and the compilation environment will be ready.
 
 ```
 npm run start:project
 ```
 
-### 3. resources/doc/api.md を編集する
+### 3. Edit the resources/doc/api.md
+Editing automatically updates the HTML and refreshes the browser. At the same time, `api_document.pdf` is created in`/doc/ `.
 
-編集すると自動的にHTMLが更新され、ブラウザもリフレッシュされます。
-と同時に `/doc/` 内に `api_document.pdf` が作成されます。
 
-## 記法
-基本は通常のMarkDownと同様ですが、一部オリジナルの記法があります。
+## Usage
+The basics are the same as normal MarkDown, but there are some original notations.
 
-### ドキュメントタイトル
-`#` はドキュメントタイトルです。<br>
-必ず1つだけにしてください。<br>
-HTMLでは`<h1>`に変換され、ページタイトルに適用されます。
 
-**Example**
-```:md
-# ドキュメントタイトル
-```
-
-### API名
-`##` はAPI名になります。<br>
-HTMLでは`<h2>`に変換され、API名と左メニューに使用されます。
-また、カッコ（`()`）を記述し、`POST/GET`と`Content-Type`を加えてください。
+### Document title
+`#` Is the document title.<br>
+Please be sure to have only one.
+<br>
+In HTML, it is converted to `<h1>` and applied to the page title.
 
 **Example**
 ```:md
-## API名(GET,application/json)
+# Document title
 ```
 
-### サンプル等ソースの表示
-ソースの表示はコード記法を`<source>`で括ってください。<br>
-`**TEXT**`の強調記法は見出し要素となります。
+### API name
+`##` is the API name.<br>
+In HTML, it is converted to `<h2>` and used for API name and left menu.
+Also, write parentheses (`()`) and add `POST/GET/DELETE` and` Content-Type`.
+
+**Example**
+```:md
+## API_Name(GET,application/json)
+```
+
+### Display of sample etc. source
+For display of source, please enclose code notation with `<source>`.<br>
+The highlighting syntax of `** TEXT **` is the heading element.
 
 ````
 <source>
@@ -67,9 +124,9 @@ https://stg.example.com/add
 </source>
 ````
 
-### サンプル等ソースのカスタム記法
-ソースコードのカスタム記法です。
-下記のようにコードフォーマットのあとにコロン（`:`）で見出し名を設定します。
+### Custom notation of sample etc. source
+It is a custom notation of source code.<br>
+Set the heading name with a colon (`:`) after the code format as shown below.
 
 ````
 ```js:PRODUCTION
@@ -81,9 +138,9 @@ https://stg.example.com/add
 ```
 ````
 
-### パラメータ部分の特殊記法
-パラメータ表の部分にのみ、特殊な記法を追加しました。<br>
-下記のように、パラメータ名に 型名（`_型名_`）と 必須（`_*_`）を入れられるようにしました。
+### Special notation of parameter part
+A special notation was added only to the part of the parameter table.<br>
+As shown below, parameter names can now be typed (`_type_name_`) and mandatory (` _ * _ `).
 
 ```
 |パラメータ名|説明|
@@ -92,3 +149,10 @@ https://stg.example.com/add
 |tel _string_ _*_|電話番号|
 |mail _string_ _*_|メールアドレス|
 ```
+
+## Licence
+[MIT](https://github.com/axcelwork/tool/blob/master/LICENCE)
+
+## Author
+
+[axcelwork](https://github.com/axcelwork)
