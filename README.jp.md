@@ -1,10 +1,8 @@
 Torus-apidoc
 ====
 
-[![GitHub release](http://img.shields.io/github/release/axcelwork/gcli.svg?style=flat-square)][release]
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
 
-[release]: https://github.com/axcelwork/torus-apidoc/releases
 [license]: https://github.com/axcelwork/torus-apidoc/blob/master/LICENSE
 
 ## Overview
