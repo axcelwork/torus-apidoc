@@ -143,11 +143,11 @@ A special notation was added only to the part of the parameter table.<br>
 As shown below, parameter names can now be typed (`_type_name_`) and mandatory (` _ * _ `).
 
 ```
-|パラメータ名|説明|
+|parameter|description|
 |--|--|
-|name _string_ _*_|氏名|
-|tel _string_ _*_|電話番号|
-|mail _string_ _*_|メールアドレス|
+|name _string_ _*_|name|
+|tel _string_ _*_|tell|
+|mail _string_ _*_|mailaddress|
 ```
 
 ## Licence
