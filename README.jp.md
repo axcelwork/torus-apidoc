@@ -4,8 +4,8 @@ Torus-apidoc
 [![GitHub release](http://img.shields.io/github/release/axcelwork/gcli.svg?style=flat-square)][release]
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
 
-[release]: https://github.com/axcelwork/torus/releases
-[license]: https://github.com/axcelwork/torus/blob/master/LICENSE
+[release]: https://github.com/axcelwork/torus-apidoc/releases
+[license]: https://github.com/axcelwork/torus-apidoc/blob/master/LICENSE
 
 ## Overview
 Markdown形式のドキュメントでAPIドキュメントを作成することができます。
@@ -17,7 +17,7 @@ Markdown形式のドキュメントでAPIドキュメントを作成すること
 レスポンシブデザインに対応し、どのデバイスでもキレイに見ることが出来ます。
 
 ## Demo
-[demo](https://axcelwork.github.io/torus/dist/index.html)
+[demo](https://axcelwork.github.io/torus-apidoc/dist/index.html)
 
 ## Requirement
 このツールは以下のnpmモジュールを使用しています。<br>
