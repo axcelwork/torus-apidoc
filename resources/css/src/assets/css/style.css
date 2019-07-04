@@ -688,8 +688,14 @@ button {
 		}
 
 		.index {
+			
+			&:not(:first-child) {
+				page-break-before:always;
+				padding-top: 50px;
+			}
+
 			&:before {
-				height: 2px;
+				display: none;
 			}
 		}
 
