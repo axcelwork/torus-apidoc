@@ -684,7 +684,9 @@ button {
 
 	#contents {
 		&:before {
-			display: none;
+			width: calc(50%);
+			height: 10000vh;
+			/* display: none; */
 		}
 
 		.index {
