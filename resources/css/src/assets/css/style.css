@@ -496,7 +496,7 @@ button {
 			th {
 				font-size: 12px;
 				font-weight: bold;
-				color: #8D9AA1;
+				color: #7A8899;
 
 				border-bottom: 1px solid #EBF0F2;
 				padding-bottom: 15px;
@@ -533,7 +533,7 @@ button {
 							display: block;
 							font-size: 11px;
 							font-weight: bold;
-							color: #7C91A1;
+							color: #7A8899;
 
 							&.required {
 								color: #BF9E3B;
@@ -684,9 +684,9 @@ button {
 
 	#contents {
 		&:before {
+			background-color: #eee;
 			width: calc(50%);
-			height: 10000vh;
-			/* display: none; */
+			height: 20000vh;
 		}
 
 		.index {
