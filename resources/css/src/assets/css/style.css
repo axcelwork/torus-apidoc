@@ -419,7 +419,7 @@ button {
 	& > p {
 		font-size: 14px;
 		line-height: 1.5;
-		color: #404B53;
+		color: #333;
 
 		margin-right: calc(50% + 50px);
 		margin-top: 20px;
@@ -518,7 +518,7 @@ button {
 					text-align: left;
 					
 					font-size: 14px;
-					color: #404B53;
+					color: #333;
 					word-break: break-all;
 					line-height: 1.5;
 					vertical-align: top;

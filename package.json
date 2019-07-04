@@ -1,6 +1,6 @@
 {
   "name": "torus-apidoc",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create API document with Markdown format document",
   "main": "index.js",
   "copy": "Copyright &copy; Example Inc.",
